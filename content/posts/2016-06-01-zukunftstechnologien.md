@@ -1,9 +1,12 @@
 ---
 date: "2016-06-01T00:00:00Z"
-image: "img/matrix.png"
+image:
+  feature: "img/matrix.png"
+  credit: "Jamie Zawinski"
+  creditlink: "https://commons.wikimedia.org/wiki/File:The.Matrix.glmatrix.2.png"
 tags:
-- news
-- tech
+  - news
+  - tech
 title: The future is now!
 ---
 
@@ -52,4 +55,3 @@ Weiterer cooler Nebeneffekt von HTTP/2: Das Protokoll ist zwar sowohl für HTTP 
 
 
 
-(Headerimage by  by Jamie Zawinski [Link](https://commons.wikimedia.org/wiki/File:The.Matrix.glmatrix.2.png))

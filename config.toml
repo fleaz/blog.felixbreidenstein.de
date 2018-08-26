@@ -1,5 +1,26 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
-title = "Blog.FelixBreidenstein.de"
-theme = "nederburg-fork"
+title = "Blog - Felix Breidenstein"
+theme = "hpstr"
 
+pygmentsCodeFences = true
+paginate = 5
+
+
+
+[params]
+	subtitle = "Wie Twitter nur mit noch mehr Buchstaben"
+    show_summary = true
+	comments = false
+	share = false
+	[params.author]
+		name = "Felix Breidenstein"
+		avatar = "/img/avatar.jpg"
+		bio = "404 No description found"
+		github = "f-breidenstein"
+		twitter = "fleaz_"
+		instagram = "f_breidenstein"
+	[params.image]
+		feature = "/img/header.jpg"
+		credit = "myfree"
+		creditlink = "http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/"

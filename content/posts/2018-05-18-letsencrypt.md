@@ -1,19 +1,23 @@
 ---
+layout: post
 date: "2018-05-18T00:00:00Z"
-image: "img/letsencrypt-banner.png"
+image:
+  feature: "img/letsencrypt-banner.png"
 tags:
-- tech
+  - tech
 title: Ungültige Subdomains aus bestehendem Let's Encrypt Zertifikat entfernen
 ---
 
 Von [Let's Encrypt](https://letsencrypt.org/) habt ihr ja hoffentlich alle schonmal gehört. Falls nicht hier die eigene Beschreibung von ihrer
 Webseite:
 
-{{< highlight text >}}
+```
 Let’s Encrypt is a free, automated, and open certificate authority (CA)
 run for the public’s benefit. It is a service provided by
 the Internet Security Research Group (ISRG).
-{{< / highlight >}}
+```
+
+<!--more-->
 
 Oder runterbrochen auf das Wesentliche: Ihr bekommt da super kompfortabel und kostenlos SSL Zertifikate für eure Server die ohne Probleme in sämtlichen Browsern akzeptiert werden. Und das ganze auch noch mit super Tooling und fertig paketiert in den meisten Linux Betriebssystemen. Wenn ihr das jetzt unbedingt haben wollt empfehle ich euch für die eigenen Server den [Certbot](https://certbot.eff.org/) der EFF zu installieren. Für Menschen auf einem uberspace ist das ganze sogar noch einfacher, einfach mal ins [uberspace Wiki](https://wiki.uberspace.de/webserver:https#let_s-encrypt-zertifikate) schauen.
 

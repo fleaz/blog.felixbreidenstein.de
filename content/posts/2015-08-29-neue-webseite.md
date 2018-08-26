@@ -1,7 +1,7 @@
 ---
 date: "2015-08-29T00:00:00Z"
 tags:
-- news
+  - news
 title: Neues Design
 ---
 
