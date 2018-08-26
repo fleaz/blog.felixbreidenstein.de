@@ -1,7 +1,7 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
 title = "Blog - Felix Breidenstein"
-theme = "hpstr"
+theme = "hpstr-fork"
 
 pygmentsCodeFences = true
 paginate = 5
