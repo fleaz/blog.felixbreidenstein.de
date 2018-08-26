@@ -1,4 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hpstr"
+baseURL = "https://blog.felixbreidenstein.de"
+languageCode = "de-de"
+title = "Blog.FelixBreidenstein.de"
+theme = "nederburg-fork"
+
