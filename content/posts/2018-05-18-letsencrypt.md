@@ -11,11 +11,9 @@ title: Ungültige Subdomains aus bestehendem Let's Encrypt Zertifikat entfernen
 Von [Let's Encrypt](https://letsencrypt.org/) habt ihr ja hoffentlich alle schonmal gehört. Falls nicht hier die eigene Beschreibung von ihrer
 Webseite:
 
-```
-Let’s Encrypt is a free, automated, and open certificate authority (CA)
-run for the public’s benefit. It is a service provided by
-the Internet Security Research Group (ISRG).
-```
+> Let’s Encrypt is a free, automated, and open certificate authority (CA)
+> run for the public’s benefit. It is a service provided by
+> the Internet Security Research Group (ISRG).
 
 <!--more-->
 
@@ -28,9 +26,9 @@ Ein Problem über das ich jedoch schon mehrmals gestolpter bin, und das man selb
 ## Die Lösung
 
 Am einfachsten behebt ihr das Problem folgendermaßen:
-{{< highlight shell >}}
+```shell
 $ certbot renew --allow-subset-of-names
-{{< / highlight >}}
+```
 Mit diesem Parameter erlaubt ihr Certbot das neue Zertifikat auch nur mit einer Teilmenge an Domains zu erstellen. In unserem Beispiel wären im neuen Zertifikat also nurnoch `foobar.com` und `www.foobar.com` mit drin. Problem gelöst.
 
 Ihr werdet jetzt vielleicht sagen "Aber Felix, wieso schreib ich das dann nicht auch so in mein monatliches Skript und hab niewieder Probleme?". Das Problem dabei ist halt, dass ihr euch die Zertifikate automatisiert verbastelt unabhängig davon was der Grund war wieso certbot die Domain nicht verlängern konnte. Wenn ihr zum Beispiel einfach nur zu viel an eurem nginx vHost rumgebastelt habt und daher die HTTP-Challenge nicht ausgelesen konnte, fliegt die Domains aus dem Zertifikat. Und die BesucherInnen eurer Webseite bekommen dann ne dicke SSL-Warnung vom ihrem Browser präsentiert (die Sie wenn ihr [HSTS](https://de.wikipedia.org/wiki/HTTP_Strict_Transport_Security) aktiviert hattet, nichtmal wegklicken können), statt euren süßen Katzenbildern. Wäre doch schade, oder?
