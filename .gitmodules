@@ -1,0 +1,3 @@
+[submodule "themes/hpstr"]
+	path = themes/hpstr
+	url = https://github.com/dldx/hpstr-hugo-theme.git
