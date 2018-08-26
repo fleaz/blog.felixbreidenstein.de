@@ -57,4 +57,3 @@ Persönlich benutze ich auf der Arbeit eine "Tesoro Durandal" mit MX Blue. Ersta
 Daheim benutze ich aktuell eine "Cherry G80-3000" mit MX Clear Tasten. Die sind mir jedoch einen bisschen zu hart, weswegen ich mir zum Geburtstag eine "Lioncast LK20" mit braunen Tasten gewünscht habe.
 
 Ich bin gespannt wie die sich tippen lässt und ob ich den Nummernblock vermissen werden.
----

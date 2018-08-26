@@ -12,6 +12,3 @@ unter [gallery.felixbreidenstein.de](http://gallery.felixbreidenstein.de) kann i
 veröffentlichen als bspw. bei 500px.
 Das ganze basiert auf [Jekyll](http://jekyllrb.com/) mit dem [HPSTR
 Theme](https://mademistakes.com/work/hpstr-jekyll-theme/).
-
----
-
