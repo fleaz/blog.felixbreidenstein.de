@@ -1,7 +1,6 @@
 ---
 date: "2016-02-29T00:00:00Z"
-image:
-  feature: keyboard.jpg
+image: "img/keyboard.jpg"
 tags:
 - tech
 title: Du bist was du tippst

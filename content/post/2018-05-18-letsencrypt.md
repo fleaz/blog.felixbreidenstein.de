@@ -1,7 +1,6 @@
 ---
 date: "2018-05-18T00:00:00Z"
-image:
-  feature: images/letsencrypt-banner.png
+image: "img/letsencrypt-banner.png"
 tags:
 - tech
 title: Ungültige Subdomains aus bestehendem Let's Encrypt Zertifikat entfernen

@@ -1,7 +1,6 @@
 ---
 date: "2016-06-01T00:00:00Z"
-image:
-  feature: matrix.png
+image: "img/matrix.png"
 tags:
 - news
 - tech
