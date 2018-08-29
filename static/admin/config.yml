@@ -18,5 +18,10 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {label: "Feature", name: "feature", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
