@@ -20,6 +20,7 @@ Wenn ihr also gerade dabei seid eure alten Chat Backups in rocket.chat zu import
 #! /usr/bin/env python3
 import requests
 from pprint import pprint
+from sys import exit
 
 BASE_URL = "https://companyname.rocket.chat"
 USERNAME = "JohneDoe"
