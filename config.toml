@@ -17,7 +17,7 @@ paginate = 5
 		name = "Felix Breidenstein"
 		avatar = "/img/avatar.jpg"
 		bio = "404 No description found"
-		github = "f-breidenstein"
+		github = "fleaz"
 		twitter = "fleaz_"
 		instagram = "f_breidenstein"
 	[params.image]
