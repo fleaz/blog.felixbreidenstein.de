@@ -1,9 +1,3 @@
-[submodule "static/themes/nederburg"]
-	path = static/themes/nederburg
-	url = https://github.com/appernetic/hugo-nederburg-theme
-[submodule "themes/hpstr"]
-	path = themes/hpstr
-	url = https://github.com/dldx/hpstr-hugo-theme.git
 [submodule "themes/hpstr-fork"]
 	path = themes/hpstr-fork
 	url = https://github.com/f-breidenstein/hpstr-hugo-theme
