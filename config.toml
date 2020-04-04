@@ -3,10 +3,11 @@ languageCode = "de-de"
 title = "Blog - Felix Breidenstein"
 theme = "hpstr-fork"
 
+[permalinks]
+  posts = "/:year/:title/"
+
 pygmentsCodeFences = true
 paginate = 5
-
-
 
 [params]
 	subtitle = "Wie Twitter nur mit noch mehr Buchstaben"
