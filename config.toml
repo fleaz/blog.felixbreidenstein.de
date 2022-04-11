@@ -1,6 +1,6 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
-title = "Blog - Felix Breidenstein"
+title = "blog.felixbreidenstein.de"
 theme = "hpstr-fork"
 
 [permalinks]
