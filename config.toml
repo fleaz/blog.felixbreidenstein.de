@@ -1,7 +1,7 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
 title = "blog.felixbreidenstein.de"
-theme = "hpstr-fork"
+theme = ["hugo-notice", "hpstr-fork"]
 
 [permalinks]
   posts = "/:year/:title/"
