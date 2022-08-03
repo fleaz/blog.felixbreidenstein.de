@@ -10,14 +10,14 @@ pygmentsCodeFences = true
 paginate = 5
 
 [params]
-	subtitle = "Wie Twitter nur mit noch mehr Buchstaben"
+	subtitle = "Wie Twitter nur mit mehr Buchstaben"
     show_summary = true
 	comments = false
 	share = false
 	[params.author]
-		name = "Felix Breidenstein"
+		name = "Felix Breidenstein (er/he)"
 		avatar = "/img/avatar.jpg"
-		bio = "404 No description found"
+		bio = "3D Drucker, Fahrräder, Computer"
 		github = "fleaz"
 		twitter = "fleaz_"
 		instagram = "f_breidenstein"
