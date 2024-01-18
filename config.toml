@@ -1,27 +1,48 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
 title = "blog.felixbreidenstein.de"
-theme = ["hugo-notice", "hpstr-fork"]
-
-[permalinks]
-  posts = "/:year/:title/"
-
-pygmentsCodeFences = true
-paginate = 5
+theme = ["hugo-notice", "anatole"]
+paginate = 10
 
 [params]
-	subtitle = "Wie Twitter nur mit mehr Buchstaben"
-    show_summary = true
-	comments = false
-	share = false
-	[params.author]
-		name = "Felix Breidenstein (er/he)"
-		avatar = "/img/avatar.jpg"
-		bio = "3D Drucker, Fahrräder, Computer"
-		github = "fleaz"
-		twitter = "fleaz_"
-		instagram = "f_breidenstein"
-	[params.image]
-		feature = "/img/header.jpg"
-		credit = "myfree"
-		creditlink = "http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/"
+title = "Felix Breidenstein"
+author = "Felix Breidenstein"
+profilePicture = "img/avatar.jpg"
+description = """
+My hands are typing words...
+"""
+doNotLoadAnimations = true # Animations are loaded by default
+
+displayMode = "dark"
+contentratio = 0.7
+customCss = ["css/syntax.css"]
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:mail@example.com"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
