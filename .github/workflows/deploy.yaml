@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync dist/ s3://report-phishing/
+      - run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync public/ s3://blog.felixbreidenstein.de/
         env:
           AWS_DEFAULT_REGION: "us-east-1"
           AWS_ACCESS_KEY_ID: "${{ secrets.ACCESS_KEY }}"
