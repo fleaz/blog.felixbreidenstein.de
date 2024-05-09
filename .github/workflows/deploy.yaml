@@ -1,0 +1,28 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify
+
+      - run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync dist/ s3://report-phishing/
+        env:
+          AWS_DEFAULT_REGION: "us-east-1"
+          AWS_ACCESS_KEY_ID: "${{ secrets.ACCESS_KEY }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.SECRET_KEY }}"
