@@ -1,6 +1,6 @@
-[submodule "themes/hpstr-fork"]
-	path = themes/hpstr-fork
-	url = https://github.com/fleaz/hpstr-hugo-theme
 [submodule "themes/hugo-notice"]
 	path = themes/hugo-notice
 	url = https://github.com/martignoni/hugo-notice.git
+[submodule "themes/anatole"]
+	path = themes/anatole
+	url = https://github.com/lxndrblz/anatole
