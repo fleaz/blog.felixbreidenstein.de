@@ -11,7 +11,7 @@ pagination.pagerSize = 5
 
 
 [params]
-    title = "Aaargh"
+    title = "My hands are typing words..."
     author = "Felix Breidenstein"
     description = "#FleazBloggt"
     profilePicture = "/img/avatar.jpg"
