@@ -1,28 +1,34 @@
 baseURL = "https://blog.felixbreidenstein.de"
 languageCode = "de-de"
 title = "blog.felixbreidenstein.de"
-theme = ["hugo-notice", "hpstr-fork"]
+theme = ["hugo-notice", "anatole"]
 
 pygmentsCodeFences = true
-paginate = 5
+pagination.pagerSize = 5
 
 [permalinks]
   posts = "/:year/:title/"
 
 
 [params]
-	subtitle = "Wie Twitter nur mit mehr Buchstaben"
-    show_summary = true
-	comments = false
-	share = false
-	[params.author]
-		name = "Felix Breidenstein (er/he)"
-		avatar = "/img/avatar.jpg"
-		bio = "3D Drucker, Fahrräder, Computer"
-		github = "fleaz"
-		twitter = "fleaz_"
-		instagram = "f_breidenstein"
-	[params.image]
-		feature = "/img/header.jpg"
-		credit = "myfree"
-		creditlink = "http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/"
+    title = "My hands are typing words..."
+    author = "Felix Breidenstein"
+    description = "#FleazBloggt"
+    profilePicture = "/img/avatar.jpg"
+    doNotLoadAnimations = true
+    contentratio = 0.7
+
+    [[params.socialIcons]]
+    icon = "fab fa-mastodon"
+    title = "Mastodon"
+    url = "https://chaos.social/@fleaz"
+
+    [[params.socialIcons]]
+    icon = "fab fa-github"
+    title = "Github"
+    url = "https://github.com/fleaz"
+
+    [[params.socialIcons]]
+    icon = "fas fa-envelope"
+    title = "E-Mail"
+    url = "mailto:blog@felixbreidenstein.de"

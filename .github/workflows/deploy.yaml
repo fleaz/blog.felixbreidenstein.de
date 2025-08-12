@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'dev'
 
 jobs:
   build:
@@ -21,7 +22,17 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync public/ s3://blog.felixbreidenstein.de/
+      - name: "Deploy prod"
+        if: github.ref == 'refs/heads/main'
+        run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync public/ s3://blog.felixbreidenstein.de/
+        env:
+          AWS_DEFAULT_REGION: "garage"
+          AWS_ACCESS_KEY_ID: "${{ secrets.ACCESS_KEY }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.SECRET_KEY }}"
+
+      - name: "Deploy dev"
+        if: github.ref == 'refs/heads/dev'
+        run: aws --endpoint-url "https://s3.fleaz.me"  s3 sync public/ s3://dev-blog.felixbreidenstein.de/
         env:
           AWS_DEFAULT_REGION: "garage"
           AWS_ACCESS_KEY_ID: "${{ secrets.ACCESS_KEY }}"
