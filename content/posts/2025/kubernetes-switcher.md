@@ -1,5 +1,5 @@
 ---
-title: "Ein Haus bauen, einen Baum pflanzen, einen k8s Switcher bauen..."
+title: "Ein Haus bauen, einen Baum pflanzen, einen k8s Switcher schreiben..."
 date: 2025-08-27T00:00:00+02:00
 tags:
   - tech
